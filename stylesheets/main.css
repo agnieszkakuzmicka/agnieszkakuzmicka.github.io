@@ -1,0 +1,254 @@
+body {
+	font-family: 'Merriweather', serif;
+	background: #b2eefe;
+}
+
+li {
+	display: inline-block;
+	padding: 5px 20px;
+}
+li:hover {
+	background: #1b998b;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.topbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.7);
+	z-index: 1;
+}
+.topbar_nav {
+	float: right;
+}
+.topbar_title {
+	float: left;
+	padding-left: 20px;
+}
+.landing {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+}
+.landing_bg {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../photos/landing_foto.jpg");
+	background-size: cover;
+	background-position: center center;
+ 	background-repeat: no-repeat;
+}
+.landing_title {
+  margin-top: 0px;
+  margin-bottom: 48px;
+  padding-top: 404px;
+  color: #b2eefe;
+  font-family: 'Merriweather', serif;
+  font-size: 90px;
+  text-align: center;
+}
+.landing_button {
+  display: inline-block;
+  padding: 16px 48px;
+  border: 2px solid #1b998b;
+  border-radius: 6px;
+  background-color: #1b998b;
+  color: #f0f0f0;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 6px;
+  cursor: pointer;
+}
+.landing_button:hover {
+  background-color: transparent;
+  color: #1b998b;
+}
+.about {
+  /*tło*/
+  background-color: #b2eefe;
+}
+
+.about__content {
+  /*szerokość - responsive!*/
+  max-width: 1024px;
+  min-height: 100px;
+  /*wyśrodkowanie*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding-top: 64px;
+  color: #1b998b;
+  font-size: 72px;
+  text-align: center;
+  cursor: default;
+}
+.about__desciption {
+  color: #1b998b;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.about__desciption:first-letter {
+  font-size: 150%;
+  font-weight: 200
+}
+.about_avatar-frame {
+  float: left;
+  margin-right: 24px;
+  background-color: #fefefe;
+  width: 200px;
+
+}
+.about__desciption:after {
+  /*clearfix*/
+  content: "";
+  display: table;
+  clear: both;
+}
+.skills__column {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  text-align: center;
+}
+.skill__name {
+  color: #1b998b;
+  font-size: 20px;
+  line-height: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.skill__description {
+  color: #1b998b;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.skill__description:first-letter {
+    font-size: 200%;
+    line-height: normal;
+}
+
+.gallery {
+	margin: 0 auto;
+}
+.gallery__title {
+margin-top: 0;
+margin-bottom: 33px;
+padding-top: 64px;
+color: #1b998b;
+font-size: 72px;
+text-align: center;
+cursor: default;
+}
+.gallery__content {
+	margin: 0 auto;
+	width: 768px;
+	font-size: 0;
+}
+.gallery__column {
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	padding: 0.5%;
+}
+.box-container {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.box {
+  width: 125%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  transform: translate3d(-40px, 0, 0);
+}
+.box:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: translate3d(0, 0, 0);
+}
+.box--1 {
+  background-image: url("https://example.com/img1.jpg");
+  height: 300px;
+}
+.contact {
+	position: relative;
+	padding-bottom: 90px;
+}
+.contact__content {
+	margin: auto;
+	max-width: 1024px;
+	text-align: center;
+}
+.contact__column_title {
+	position: relative;
+	color: #1b998b;
+	font-size: 72px;
+	text-align: center;
+	cursor: default;
+}
+.contact__column {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 49%;
+}
+.contact__socjal__link {
+  text-decoration: none;
+}
+.contact__socjal__link:nth-of-type(2) {
+  margin: 0 40px;
+}
+.contact__icon {
+  color: #fafafa;
+}
+.fa-3x {
+	font-size: 3em;
+}
+.fa {
+	display: inline-block;
+}
+.contact__column__title {
+	color: #1b998b;
+	margin-bottom: 36px;
+}
+
+.contact__link {
+	display: block;
+	color: #fafafa;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.contact__link .fa {
+	position: relative;
+	top: 3px;
+	line-height: 48px;
+	margin-right: 8px;
+}
+.contact__input {
+	border: 2px solid  #1b998b;
+	padding: 10px 20px;
+	margin: 10px 0;
+	width: 240px;
+}
